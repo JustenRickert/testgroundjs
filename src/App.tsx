@@ -2,26 +2,17 @@ import * as React from 'react'
 import './App.css'
 
 import ButtonDemo from './component/Button'
-
-const logo = require('./logo.svg')
+import { DropdownComponentDemo } from './component/DropdownMultiselect'
 
 class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-
-        <ButtonDemo />
-
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </div>
-    )
-  }
+    render() {
+        return (
+            <div className="App">
+                <ButtonDemo />
+                <DropdownComponentDemo />
+            </div>
+        )
+    }
 }
 
 export default App

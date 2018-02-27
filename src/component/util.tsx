@@ -11,25 +11,6 @@ export const SmallBox = styled.div`
   margin: auto;
 `
 
-export const Button = styled.button`
-  background-color: palevioletred;
-  border: 2px solid darkgray;
-  color: papayawhip;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-`
-
-export const AnimatedButton = Button.extend`
-  transition: 0.75s;
-  :hover {
-    color: palevioletred;
-    background-color: white;
-  }
-`
-
 export const Header = styled.h1`
   font-size 1.5em;
   text-align: left;
@@ -52,4 +33,18 @@ export const Column = styled.div`
   display: flex;
   padding: 15px;
   flex-direction: column;
+`
+
+export const Row = styled.div`
+  display: flex;
+  padding: 15px;
+  flex-direction: row;
+`
+
+export const List = styled.ul`
+`
+
+export const ListItem = styled.li`
+    padding: 5px;
+    :hover { cursor: pointer; }
 `
